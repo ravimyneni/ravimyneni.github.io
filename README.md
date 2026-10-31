@@ -50,5 +50,5 @@ python3 -m http.server 8000
 
 - Project cards live in the `#projects` list of `index.html`; each card links to its live case study.
   Cards share one template: same image ratio, two-line title slot, tags and Read link pinned to the bottom.
-- Theme colours are CSS variables at the top of `styles.css` (`:root` for light, `html.dark` for dark).
+- Theme colors are CSS variables at the top of `styles.css` (`:root` for light, `html.dark` for dark).
 - All text is Ravi's own, from his resume and his case studies.
