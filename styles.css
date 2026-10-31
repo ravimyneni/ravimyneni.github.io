@@ -332,7 +332,6 @@ html.light .role-card .badge { color: #2a6fe0; }
 .wk-count { font-size: 14px; font-weight: 600; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
 .wk-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 28px; margin-top: 8px; }
 .wk { grid-column: span 6; }
-.wk-7 { grid-column: span 7; } .wk-5 { grid-column: span 5; } .wk-12 { grid-column: 1 / -1; }
 .wk-link {
   position: relative; isolation: isolate; display: flex; flex-direction: column; height: 100%;
   border-radius: 28px; overflow: hidden; border: 1px solid var(--border);
@@ -351,7 +350,6 @@ a.wk-link:hover, a.wk-link:focus-visible, .wk-link.is-static:hover {
 }
 .wk-link:hover::before { opacity: 1; }
 .wk-media { position: relative; margin: 14px 14px 0; border-radius: 18px; overflow: hidden; aspect-ratio: 16 / 10; background: #000; }
-.wk-7 .wk-media, .wk-5 .wk-media { aspect-ratio: auto; height: clamp(240px, 25vw, 380px); }
 .wk-media.is-contain { background: #eef0f4; }
 .wk-media.is-contain > img { object-fit: contain; }
 .wk-media > img, .wk-media picture img { height: 100%; object-fit: cover; transition: transform 1.1s var(--ease); }
@@ -372,12 +370,14 @@ a.wk-link:hover, a.wk-link:focus-visible, .wk-link.is-static:hover {
 .wk-cta span { transition: transform .4s var(--ease); }
 .wk-link:hover .wk-cta span { transform: translateX(6px); }
 .wk-cta.is-muted { color: var(--muted); font-weight: 600; }
-/* Wide cards: media and copy side by side */
-.wk-12 .wk-link { flex-direction: row; align-items: stretch; }
-.wk-12 .wk-media { flex: 1.45 1 0; margin: 14px 0 14px 14px; aspect-ratio: auto; min-height: 340px; }
-.wk-12 .wk-body { flex: 1 1 0; justify-content: center; padding: 36px 40px; }
-.wk-12 .wk-media > img { position: absolute; inset: 0; }
-.wk-12 .wk-cta { margin-top: 8px; }
+/* Equal card template: same media ratio, 2-line titles, 3-line copy, tags and CTA pinned to the bottom */
+.wk-media { flex: none; }
+.wk-co { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.wk-top { flex-wrap: nowrap; }
+.wk-body h3 { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; min-height: 2.4em; }
+.wk-body p { line-height: 1.6; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; min-height: 4.8em; }
+.wk-tags { margin-top: auto; padding-top: 4px; }
+.wk-cta { margin-top: 0; }
 /* Brand panels (logo cards) */
 .brand-panel { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; overflow: hidden; transition: transform 1.1s var(--ease); }
 .brand-cap { position: relative; font-size: 12px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: rgba(255,255,255,.85); }
@@ -396,18 +396,14 @@ a.wk-link:hover, a.wk-link:focus-visible, .wk-link.is-static:hover {
 @keyframes orbFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
 
 @media (max-width: 1024px) {
-  .wk-7, .wk-5 { grid-column: span 6; }
-  .wk-7 .wk-media, .wk-5 .wk-media { height: auto; aspect-ratio: 16 / 10; }
   .about-more { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
   .hero-copy { gap: 18px; }
   .wk-grid { gap: 20px; }
-  .wk, .wk-7, .wk-5, .wk-12 { grid-column: 1 / -1; }
-  .wk-12 .wk-link { flex-direction: column; }
-  .wk-12 .wk-media { flex: none; margin: 14px 14px 0; aspect-ratio: 16 / 10; min-height: 0; }
-  .wk-12 .wk-cta { margin-top: auto; }
-  .wk-12 .wk-body { padding: 24px 24px 26px; }
+  .wk { grid-column: 1 / -1; }
+  .wk-body h3 { display: block; overflow: visible; min-height: 3.6em; }
+  .wk-body p { display: block; overflow: visible; min-height: 8em; }
   .wk-body { padding: 22px 22px 24px; }
   .rupee.r1 { font-size: 160px; }
 }
