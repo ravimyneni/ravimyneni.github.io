@@ -272,10 +272,6 @@ html.light .role-card .badge { color: #2a6fe0; }
 .contact-card .big { margin-top: 0; }
 
 /* ---------- Footer ---------- */
-.footer { padding: 40px 0 56px; border-top: 1px solid var(--border); }
-.footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-.footer p { font-size: 14px; color: var(--muted); }
-.footer a:hover { color: var(--accent); }
 .back-to-top {
   position: fixed; right: 2%; bottom: 2%; z-index: 900; width: 44px; height: 44px; border-radius: 100px;
   display: grid; place-items: center; background: var(--text); color: var(--bg); font-size: 18px;
@@ -417,3 +413,11 @@ a.wk-link:hover, a.wk-link:focus-visible, .wk-link.is-static:hover {
   .brand-chemille .orb, .status-dot::after { animation: none; }
   .wk-link, .wk-media > img, .brand-panel { transition: none; }
 }
+
+/* Contact: visible email address; last section keeps breathing room at page end */
+.contact-email { margin-top: 28px; display: flex; flex-direction: column; gap: 6px; }
+.contact-email span { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.contact-email a { font-size: clamp(22px, 3vw, 40px); font-weight: 800; letter-spacing: -.01em; color: var(--text); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; text-decoration-color: color-mix(in srgb, var(--accent) 60%, transparent); word-break: break-all; transition: color .2s; }
+.contact-email a:hover { color: var(--accent); }
+.contact-email + .btn-group { margin-top: 24px; }
+#contact { padding-bottom: 14vh; }
