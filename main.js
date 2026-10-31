@@ -38,14 +38,13 @@
   overlay.addEventListener('click', function (e) { if (e.target.closest('a')) setMenu(false); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !overlay.hidden) { setMenu(false); menuBtn.focus(); } });
 
-  // Top bar: frosted after scroll, hides on scroll down, shows on scroll up; back-to-top
+  // Top bar: always fixed at the top (never hides); hairline after scroll; back-to-top
   var bar = document.getElementById('topbar');
   var toTop = document.getElementById('back-to-top');
   var lastY = window.scrollY;
   window.addEventListener('scroll', function () {
     var y = window.scrollY;
     bar.classList.toggle('scrolled', y > 20);
-    bar.classList.toggle('hide', y > lastY && y > 300 && overlay.hidden);
     toTop.classList.toggle('show', y > window.innerHeight);
     lastY = y;
   }, { passive: true });

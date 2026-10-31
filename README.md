@@ -10,7 +10,7 @@ All files sit at the repository root:
 
 ```
 index.html      single page: hero, about, highlights, selected work, experience timeline,
-                skills & tools, education & recognition, mentor
+                skills & tools, education, mentor
 styles.css      all styles (light-first editorial theme with a dark toggle, responsive)
 main.js         menu overlay, theme toggle, sticky header, back-to-top, active nav
 404.html        not-found page
