@@ -32,6 +32,6 @@ Push the contents of this folder to a repository (root of the default branch), t
 ## Editing
 
 - Case-study cards live in the `#projects` section of `index.html`; each linked card opens its live case study.
-  The Celanese Chemille card has no public case study yet, so it shows the Chemille logo and no link.
+  The Chemille card shows the Chemille logo and links to the AskChemille case study.
 - Theme colors are CSS variables at the top of `css/styles.css` (`:root` for dark, `html.light` for light).
 - Layout and interaction style were inspired by a big-type, dark-first designer portfolio; all text is Ravi's own, from his resume.
