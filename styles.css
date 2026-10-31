@@ -324,7 +324,7 @@ html.light .role-card .badge { color: #2a6fe0; }
 @keyframes ping { 0% { transform: scale(.6); opacity: .7; } 100% { transform: scale(1.6); opacity: 0; } }
 
 /* ---------- UX Designer: more about ---------- */
-.about-more { display: block; margin-top: 40px; max-width: 760px; }
+.about-more { display: block; margin-top: 40px; max-width: none; width: 100%; }
 .about-more p { font-size: clamp(16px, 1.25vw, 19px); color: var(--muted); }
 
 /* ---------- My Work: bento cards ---------- */
