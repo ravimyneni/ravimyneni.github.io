@@ -231,15 +231,14 @@ body.lock { overflow: hidden; }
 @media (max-width: 768px) { .tl-item { grid-template-columns: 1fr; gap: 12px; padding: 28px 0; } .tl-when { flex-direction: row; align-items: center; } }
 
 /* ---------- Skills ---------- */
-.skill-grid { margin-top: 48px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
-.skill-group { padding: 28px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.skill-grid { margin-top: 48px; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); align-items: stretch; gap: 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.skill-group { padding: 28px 24px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); min-width: 0; overflow-wrap: break-word; }
 .skill-group h3 { font-size: 13px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
 .skill-group ul { margin-top: 14px; display: grid; gap: 6px; }
 .skill-group li { font-size: 17px; font-weight: 600; }
-.skill-group:last-child { grid-column: span 2; }
-.skill-group:last-child ul { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
-@media (max-width: 1024px) { .skill-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 560px) { .skill-grid { grid-template-columns: 1fr; } .skill-group:last-child { grid-column: auto; } .skill-group { padding: 22px 20px; } }
+@media (max-width: 1280px) { .skill-group { padding: 24px 20px; } .skill-group li { font-size: 16px; } }
+@media (max-width: 1024px) { .skill-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .skill-group { padding: 28px; } .skill-group li { font-size: 17px; } }
+@media (max-width: 560px) { .skill-grid { grid-template-columns: 1fr; } .skill-group { padding: 22px 20px; } }
 
 /* ---------- Education ---------- */
 .edu-list { display: grid; gap: 0; border-top: 1px solid var(--line); }
