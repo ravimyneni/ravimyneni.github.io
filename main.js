@@ -13,7 +13,7 @@
   }
   themeBtn.addEventListener('click', function () {
     doc.classList.toggle('light');
-    try { localStorage.setItem('sm-theme', doc.classList.contains('light') ? 'light' : 'dark'); } catch (e) {}
+    try { localStorage.setItem('rm-theme', doc.classList.contains('light') ? 'light' : 'dark'); } catch (e) {}
     syncThemeLabel();
   });
   syncThemeLabel();
