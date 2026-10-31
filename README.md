@@ -10,7 +10,7 @@ Virtusa, Celanese, First American, Amazon and ICICI Bank.
 index.html          single page: hero, intro, highlights, work, experience, mentor, contact
 css/styles.css      all styles (dark-first theme with a light mode, responsive)
 js/main.js          menu overlay, theme toggle, scroll reveal, carousels, sticky header
-assets/img/         case-study thumbnails (from the live case studies) and the hero desk illustration
+assets/img/         case-study thumbnails, the hero photo, and the ICICI Bank and Chemille logos
 assets/fonts/       Urbanist (self-hosted, SIL Open Font License, see OFL.txt)
 ```
 
@@ -32,6 +32,6 @@ Push the contents of this folder to a repository (root of the default branch), t
 ## Editing
 
 - Case-study cards live in the `#projects` section of `index.html`; each linked card opens its live case study.
-  Celanese Chemille and GovTech ApplySG cards have no public case study yet, so they use a gradient thumbnail and no link.
+  The Celanese Chemille card has no public case study yet, so it shows the Chemille logo and no link.
 - Theme colors are CSS variables at the top of `css/styles.css` (`:root` for dark, `html.light` for light).
 - Layout and interaction style were inspired by a big-type, dark-first designer portfolio; all text is Ravi's own, from his resume.

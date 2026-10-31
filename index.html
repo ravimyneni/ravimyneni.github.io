@@ -70,7 +70,10 @@
     <!-- 1. Hero -->
     <section class="hero" id="start" aria-label="Introduction">
       <div class="hero-inner">
-        <h1 class="hero-title reveal">Hey, I'm <span class="nowrap">Ravi.</span></h1>
+        <div class="hero-copy">
+          <h1 class="hero-title reveal">Hey, I'm <span class="nowrap">Ravi.</span></h1>
+          <p class="hero-status reveal" style="--d:.25s"><span class="status-dot" aria-hidden="true"></span><span>Now Sr UX Designer at <strong>Virtusa</strong></span></p>
+        </div>
         <figure class="hero-photo reveal" style="--d:.15s">
           <picture>
             <source srcset="ravi-myneni.webp" type="image/webp">
@@ -98,7 +101,7 @@
         <ul class="carousel hl-list" id="hl-carousel" tabindex="0" aria-label="Highlights, scroll horizontally">
           <li class="hl-card glow"><span class="blob" aria-hidden="true"></span>
             <h4>Senior Consultant, UX</h4>
-            <p>Designing GovTech Singapore's ApplySG and Cubic's Urban Mobility Back-Office at <span class="text-accent">Virtusa</span>, since Oct 2025.</p>
+            <p>Designing for Cubic Transportation Systems at <span class="text-accent">Virtusa</span>, including the Translink Merchant app, since Oct 2025.</p>
           </li>
           <li class="hl-card">
             <h4>Celanese</h4>
@@ -139,99 +142,115 @@
     <!-- 4. Big-word section: Product Designer -->
     <section class="k-col" id="work" aria-labelledby="work-title">
       <div class="wrap">
-        <figure class="feature-img reveal">
-          <img src="hero-800.jpg" width="800" height="450" loading="lazy" alt="Illustration of a wooden desk on a grassy island in a peach sky, with a laptop, coffee, notebooks and a plant.">
-        </figure>
         <h1 class="big reveal" id="work-title">UX Designer.</h1>
         <h2 class="sub reveal">I design from user research, personas and usability testing through wireframes, prototypes and design systems, working closely with dev teams to ship.</h2>
+        <div class="about-more reveal" style="--d:.1s">
+          <p>My work spans banking at ICICI Bank, e-commerce at Amazon, B2B chemicals at Celanese, real estate at First American and transport for Cubic Transportation Systems. I translate research insights into clear information architecture, user flows and interactive prototypes, then into high-fidelity interfaces with consistent UI patterns, WCAG accessibility and responsive layouts.</p>
+          <p>Along the way I've led UX audits and heuristic evaluations, maintained and evolved the Celanese Design System, and collaborated closely with product managers and developers so usability requirements match technical feasibility. At Amazon I was awarded Best Employee for contributions to the launch of the Amazon Food app.</p>
+        </div>
       </div>
     </section>
 
     <!-- 5. Work grid (staggered two columns) -->
     <section class="k-col tight" id="projects" aria-labelledby="mywork-title">
       <div class="wrap">
-        <h6 class="eyebrow" id="mywork-title">My Work</h6>
-        <ul class="work-grid">
-          <li class="work-card reveal">
-            <a href="https://ravimyneni.github.io/igniteRE-case-study/" class="work-link">
-              <div class="img-zoom"><img src="ignitere.jpg" width="1200" height="556" loading="lazy" alt="The IgniteRE dashboard on a laptop, with a welcome panel, quick actions and help links."></div>
-              <h2>Redesigning a real estate platform agents use every day.</h2>
-              <h5>IgniteRE · First American India</h5>
-              <p>UX audits, interviews and usability testing behind a modernized, responsive IgniteRE: a 40% increase in daily active users, 35% better satisfaction, 25% less task completion time and 50% fewer UI escalations.</p>
+        <div class="wk-head"><h6 class="eyebrow" id="mywork-title">My Work</h6><p class="wk-count">08 selected projects</p></div>
+        <ul class="wk-grid">
+          <li class="wk wk-7 reveal" style="--tint:#f58220">
+            <a href="https://ravimyneni.github.io/imobile-case-study/" class="wk-link">
+              <div class="wk-media"><div class="brand-panel brand-icici"><span class="rupee r1" aria-hidden="true">&#8377;</span><span class="rupee r2" aria-hidden="true">&#8377;</span><span class="rupee r3" aria-hidden="true">&#8377;</span><span class="logo-chip"><img src="icici-bank-logo.svg" width="304" height="61" alt="ICICI Bank logo" loading="lazy"></span><span class="brand-cap">iMobile banking app</span></div></div>
+              <div class="wk-body">
+                <div class="wk-top"><span class="wk-num">01</span><span class="wk-co">ICICI Bank · iMobile</span></div>
+                <h3>Redesigning a personal banking app with research at its core.</h3>
+                <p>Personas, usability testing and competitor analysis for the iMobile redesign: a 15% increase in conversion, 20% better engagement and a 30% reduction in drop-off.</p>
+                <ul class="wk-tags" aria-label="Tags"><li>Mobile App</li><li>Fintech</li><li>Research</li></ul>
+                <span class="wk-cta">Read case study <span aria-hidden="true">&#8594;</span></span>
+              </div>
             </a>
-            <ul class="pills" aria-label="Tags"><li>Web App</li><li>UX Research</li><li>Real Estate</li></ul>
           </li>
-          <li class="work-card reveal">
-            <a href="https://ravimyneni.github.io/marketing-filters-case-study/" class="work-link">
-              <div class="img-zoom"><img src="marketing-filters.webp" width="896" height="560" loading="lazy" alt="The IgniteRE Marketing catalog with a filter panel for size and theme."></div>
-              <h2>Helping agents find the right marketing materials faster.</h2>
-              <h5>Marketing Filters · IgniteRE</h5>
-              <p>Redesigning the product filters in IgniteRE Marketing so real estate agents can narrow marketing materials with clearer categories and predictable filter logic.</p>
+          <li class="wk wk-5 reveal" style="--tint:#4caf50">
+            <a href="https://ravimyneni.github.io/amazon-fresh-case-study/" class="wk-link">
+              <div class="wk-media"><img src="amazon-fresh.jpg" width="880" height="880" loading="lazy" alt="A basket of vegetables, a recipe book and a phone on a small island."></div>
+              <div class="wk-body">
+                <div class="wk-top"><span class="wk-num">02</span><span class="wk-co">Amazon Fresh · Shop by Recipe</span></div>
+                <h3>Turning a dish you want to cook into a ready-to-buy grocery cart.</h3>
+                <p>Pick a recipe and the cart fills itself: a 35% increase in ingredient bundle sales, a 25% boost in average order value and a 20% reduction in cart abandonment.</p>
+                <ul class="wk-tags" aria-label="Tags"><li>Mobile App</li><li>User Research</li><li>E-commerce</li></ul>
+                <span class="wk-cta">Read case study <span aria-hidden="true">&#8594;</span></span>
+              </div>
             </a>
-            <ul class="pills" aria-label="Tags"><li>Card Sorting</li><li>Survey</li><li>Filters</li></ul>
           </li>
-          <li class="work-card reveal">
-            <a href="https://ravimyneni.github.io/ignitere-help-center-case-study/" class="work-link">
-              <div class="img-zoom"><img src="ignitere-help-center.jpg" width="1200" height="845" loading="lazy" alt="The IgniteRE dashboard with a Help panel open: search, help articles, contact a sales rep, leave a message and live chat."></div>
-              <h2>Support that lives where the work happens.</h2>
-              <h5>Help Center &amp; Chat Support · IgniteRE</h5>
-              <p>Designing an in-app Help Center and Chat Support for the IgniteRE real estate platform, from wireframes to a native-feeling help panel.</p>
+          <li class="wk wk-5 reveal" style="--tint:#1a98ff">
+            <a href="https://ravimyneni.github.io/amazon-prime-music-case-study/" class="wk-link">
+              <div class="wk-media"><img src="amazon-prime-music.jpg" width="880" height="586" loading="lazy" alt="A sketchbook with a hand-drawn Amazon logo next to an Android phone showing Prime Music."></div>
+              <div class="wk-body">
+                <div class="wk-top"><span class="wk-num">03</span><span class="wk-co">Amazon Music · Prime Music</span></div>
+                <h3>One million songs, free for Prime members.</h3>
+                <p>A streaming music benefit inside the Amazon Digital Music Store, across Kindle Fire, Fire Phone, iOS, Android, desktop and web.</p>
+                <ul class="wk-tags" aria-label="Tags"><li>Streaming</li><li>Multi-platform</li><li>User Research</li></ul>
+                <span class="wk-cta">Read case study <span aria-hidden="true">&#8594;</span></span>
+              </div>
             </a>
-            <ul class="pills" aria-label="Tags"><li>In-app Help</li><li>Chat</li><li>Wireframes</li></ul>
           </li>
-          <li class="work-card reveal">
-            <a href="https://ravimyneni.github.io/amazon-fresh-case-study/" class="work-link">
-              <div class="img-zoom"><img src="amazon-fresh.jpg" width="880" height="880" loading="lazy" alt="A basket of vegetables, a recipe book and a phone on a small island."></div>
-              <h2>Turning a dish you want to cook into a ready-to-buy grocery cart.</h2>
-              <h5>Shop by Recipe · Amazon Fresh</h5>
-              <p>Pick a recipe and the cart fills itself. Shop by Recipe drove a 35% increase in ingredient bundle sales, a 25% boost in average order value and a 20% reduction in cart abandonment.</p>
-            </a>
-            <ul class="pills" aria-label="Tags"><li>Mobile App</li><li>User Research</li><li>E-commerce</li></ul>
-          </li>
-          <li class="work-card reveal">
-            <a href="https://ravimyneni.github.io/amazon-prime-music-case-study/" class="work-link">
-              <div class="img-zoom"><img src="amazon-prime-music.jpg" width="880" height="586" loading="lazy" alt="A sketchbook with a hand-drawn Amazon logo next to an Android phone showing Prime Music."></div>
-              <h2>One million songs, free for Prime members.</h2>
-              <h5>Amazon Prime Music · Amazon Development Centre India</h5>
-              <p>Designing a streaming music benefit inside the Amazon Digital Music Store, across Kindle Fire, Fire Phone, iOS, Android, desktop and web. Reported results: +71% median active customers, +50% active days, +36% listening hours and +31% new-customer retention.</p>
-            </a>
-            <ul class="pills" aria-label="Tags"><li>Streaming</li><li>Multi-platform</li><li>User Research</li></ul>
-          </li>
-          <li class="work-card reveal">
-            <a href="https://ravimyneni.github.io/imobile-case-study/" class="work-link">
-              <div class="img-zoom"><img src="imobile.jpg" width="880" height="503" loading="lazy" alt="A phone, a piggy bank and coins on a small island."></div>
-              <h2>Redesigning a personal banking app with research at its core.</h2>
-              <h5>iMobile · ICICI Bank</h5>
-              <p>Personas, usability testing and competitor analysis for the iMobile redesign: a 15% increase in conversion, 20% better engagement and a 30% reduction in drop-off.</p>
-            </a>
-            <ul class="pills" aria-label="Tags"><li>Mobile App</li><li>Fintech</li><li>Research</li></ul>
-          </li>
-          <li class="work-card reveal">
-            <a href="https://ravimyneni.github.io/cubic-translink-merchant-case-study/" class="work-link">
-              <div class="img-zoom"><img src="translink.webp" width="1167" height="500" loading="lazy" alt="Four Translink Merchant Android screens: splash, log in, PIN entry and the Admin home."></div>
-              <h2>A point-of-sale app for the shops that sell go cards.</h2>
-              <h5>Translink Merchant · Cubic Transportation Systems</h5>
-              <p>Work for Cubic Transportation Systems at Virtusa: an Android app for retailers to read a card, take payment, load value or a pass, print the receipt and close the shift.</p>
-            </a>
-            <ul class="pills" aria-label="Tags"><li>Android</li><li>Role-based UX</li><li>Prototyping</li></ul>
-          </li>
-          <li class="work-card reveal">
-            <div class="work-link is-static">
-              <div class="img-zoom thumb-grad grad-a" aria-hidden="true"><span>Chemille</span></div>
-              <h2>A multilingual B2B website on the Celanese Design System.</h2>
-              <h5>Chemille B2B redesign · Celanese</h5>
-              <p>A responsive, accessible redesign in 6 more languages: a 22% increase in customer retention, 17% more lead conversions and a 13% uplift in international revenue, plus a personalized dashboard for returning buyers.</p>
+          <li class="wk wk-7 reveal" style="--tint:#8b5cf6">
+            <div class="wk-link is-static">
+              <div class="wk-media"><div class="brand-panel brand-chemille"><picture><source srcset="chemille-logo.webp" type="image/webp"><img class="orb" src="chemille-logo.png" width="176" height="176" alt="Chemille logo" loading="lazy"></picture><span class="wordmark">Chemille<sup>&reg;</sup></span><span class="brand-cap">B2B website · Celanese Design System</span></div></div>
+              <div class="wk-body">
+                <div class="wk-top"><span class="wk-num">04</span><span class="wk-co">Celanese · Chemille</span></div>
+                <h3>A multilingual B2B website on the Celanese Design System.</h3>
+                <p>A responsive, accessible redesign in 6 more languages: a 22% increase in customer retention, 17% more lead conversions and a 13% uplift in international revenue, plus a personalized dashboard for returning buyers.</p>
+                <ul class="wk-tags" aria-label="Tags"><li>B2B</li><li>Design System</li><li>Multilingual</li></ul>
+                <span class="wk-cta is-muted">Celanese · Mar–Sep 2025</span>
+              </div>
             </div>
-            <ul class="pills" aria-label="Tags"><li>B2B</li><li>Design System</li><li>Multilingual</li></ul>
           </li>
-          <li class="work-card reveal">
-            <div class="work-link is-static">
-              <div class="img-zoom thumb-grad grad-b" aria-hidden="true"><span>ApplySG</span></div>
-              <h2>A notification engine and no-code form builder for government services.</h2>
-              <h5>ApplySG · GovTech Singapore</h5>
-              <p>At Virtusa: stakeholder workshops, workflow analysis and rapid prototyping for a configurable form builder with dynamic fields, validation and conditional logic, built on the Singapore Design System with accessibility in mind.</p>
-            </div>
-            <ul class="pills" aria-label="Tags"><li>GovTech</li><li>Form Builder</li><li>SGDS</li></ul>
+          <li class="wk wk-12 reveal" style="--tint:#ef4444">
+            <a href="https://ravimyneni.github.io/cubic-translink-merchant-case-study/" class="wk-link">
+              <div class="wk-media is-contain"><img src="translink.webp" width="1167" height="500" loading="lazy" alt="Four Translink Merchant Android screens: splash, log in, PIN entry and the Admin home."></div>
+              <div class="wk-body">
+                <div class="wk-top"><span class="wk-num">05</span><span class="wk-co">Cubic Transportation Systems · Virtusa</span></div>
+                <h3>A point-of-sale app for the shops that sell go cards.</h3>
+                <p>Translink Merchant: an Android app for retailers to read a card, take payment, load value or a pass, print the receipt and close the shift.</p>
+                <ul class="wk-tags" aria-label="Tags"><li>Android</li><li>Role-based UX</li><li>Prototyping</li></ul>
+                <span class="wk-cta">Read case study <span aria-hidden="true">&#8594;</span></span>
+              </div>
+            </a>
+          </li>
+          <li class="wk wk-7 reveal" style="--tint:#3894ff">
+            <a href="https://ravimyneni.github.io/igniteRE-case-study/" class="wk-link">
+              <div class="wk-media"><img src="ignitere.jpg" width="1200" height="556" loading="lazy" alt="The IgniteRE dashboard on a laptop, with a welcome panel, quick actions and help links."></div>
+              <div class="wk-body">
+                <div class="wk-top"><span class="wk-num">06</span><span class="wk-co">First American India · IgniteRE</span></div>
+                <h3>Redesigning a real estate platform agents use every day.</h3>
+                <p>UX audits, interviews and usability testing behind a modernized, responsive IgniteRE: a 40% increase in daily active users, 35% better satisfaction, 25% less task time and 50% fewer UI escalations.</p>
+                <ul class="wk-tags" aria-label="Tags"><li>Web App</li><li>UX Research</li><li>Real Estate</li></ul>
+                <span class="wk-cta">Read case study <span aria-hidden="true">&#8594;</span></span>
+              </div>
+            </a>
+          </li>
+          <li class="wk wk-5 reveal" style="--tint:#f59e0b">
+            <a href="https://ravimyneni.github.io/marketing-filters-case-study/" class="wk-link">
+              <div class="wk-media"><img src="marketing-filters.webp" width="896" height="560" loading="lazy" alt="The IgniteRE Marketing catalog with a filter panel for size and theme."></div>
+              <div class="wk-body">
+                <div class="wk-top"><span class="wk-num">07</span><span class="wk-co">IgniteRE · Marketing Filters</span></div>
+                <h3>Helping agents find the right marketing materials faster.</h3>
+                <p>Clearer categories and predictable filter logic so real estate agents can narrow marketing materials quickly.</p>
+                <ul class="wk-tags" aria-label="Tags"><li>Card Sorting</li><li>Survey</li><li>Filters</li></ul>
+                <span class="wk-cta">Read case study <span aria-hidden="true">&#8594;</span></span>
+              </div>
+            </a>
+          </li>
+          <li class="wk wk-12 reveal" style="--tint:#14b8a6">
+            <a href="https://ravimyneni.github.io/ignitere-help-center-case-study/" class="wk-link">
+              <div class="wk-media"><img src="ignitere-help-center.jpg" width="1200" height="845" loading="lazy" alt="The IgniteRE dashboard with a Help panel open: search, help articles, contact a sales rep, leave a message and live chat."></div>
+              <div class="wk-body">
+                <div class="wk-top"><span class="wk-num">08</span><span class="wk-co">IgniteRE · Help Center &amp; Chat Support</span></div>
+                <h3>Support that lives where the work happens.</h3>
+                <p>An in-app Help Center and Chat Support for the IgniteRE real estate platform, from wireframes to a native-feeling help panel.</p>
+                <ul class="wk-tags" aria-label="Tags"><li>In-app Help</li><li>Chat</li><li>Wireframes</li></ul>
+                <span class="wk-cta">Read case study <span aria-hidden="true">&#8594;</span></span>
+              </div>
+            </a>
           </li>
         </ul>
       </div>
@@ -240,7 +259,7 @@
     <!-- 6. Statement banner -->
     <section class="k-col tight" aria-label="Statement">
       <div class="wrap narrow">
-        <h2 class="statement reveal">Across banking, e-commerce, real estate insurance and government services, I've turned research and usability testing into journeys, interfaces and design systems that dev teams can ship.</h2>
+        <h2 class="statement reveal">Across banking, e-commerce, real estate insurance and transport, I've turned research and usability testing into journeys, interfaces and design systems that dev teams can ship.</h2>
       </div>
     </section>
 
@@ -248,41 +267,7 @@
     <section class="k-col" id="experience" aria-labelledby="exp-title">
       <div class="wrap">
         <h1 class="big reveal" id="exp-title">Experienced.</h1>
-        <h2 class="sub reveal">8+ years across banking, e-commerce, real estate insurance and government tech, and ready to lead UX teams.</h2>
-
-        <h6 class="eyebrow mt">Full time roles</h6>
-        <ul class="carousel role-list" id="role-carousel" tabindex="0" aria-label="Roles, scroll horizontally">
-          <li class="role-card glow"><span class="blob" aria-hidden="true"></span>
-            <span class="badge">Current</span>
-            <span class="co">Virtusa India</span>
-            <h4>Senior Consultant, UX</h4>
-            <p class="date">Oct 2025 – Present</p>
-          </li>
-          <li class="role-card">
-            <span class="co">Celanese Chemicals India</span>
-            <h4>Senior UX Designer</h4>
-            <p class="date">Mar 2025 – Sep 2025</p>
-          </li>
-          <li class="role-card">
-            <span class="co">First American India</span>
-            <h4>Senior UX Designer</h4>
-            <p class="date">May 2023 – Dec 2024</p>
-          </li>
-          <li class="role-card">
-            <span class="co">Amazon Development Centre India</span>
-            <h4>UX Designer</h4>
-            <p class="date">Jul 2020 – Apr 2023</p>
-          </li>
-          <li class="role-card">
-            <span class="co">ICICI Bank</span>
-            <h4>UX Designer</h4>
-            <p class="date">Oct 2018 – Jun 2020</p>
-          </li>
-        </ul>
-        <div class="carousel-controls">
-          <button class="carousel-btn" data-target="role-carousel" data-dir="-1" aria-label="Previous roles">&#8592;</button>
-          <button class="carousel-btn" data-target="role-carousel" data-dir="1" aria-label="Next roles">&#8594;</button>
-        </div>
+        <h2 class="sub reveal">8+ years across banking, e-commerce, real estate insurance and transport, and ready to lead UX teams.</h2>
 
         <h6 class="eyebrow mt">Education</h6>
         <ul class="role-list static">
@@ -327,7 +312,7 @@
             <span class="num" aria-hidden="true">02</span>
             <h3>Workshops</h3>
             <h4>Stakeholder workshops</h4>
-            <p>I run stakeholder workshops and workflow analysis to align teams before rapid prototyping, as on ApplySG for GovTech Singapore.</p>
+            <p>I lead discovery, stakeholder workshops and journey mapping to align teams before prototyping and validation.</p>
           </li>
           <li class="mentor-card reveal" style="--d:.2s">
             <span class="num" aria-hidden="true">03</span>
