@@ -123,6 +123,8 @@ html.light .i-moon { display: none; }
   opacity: 0; transition: opacity .35s var(--ease);
 }
 .menu-overlay.open { opacity: 1; }
+.menu-overlay[hidden] { display: none; }
+.menu-overlay:not(.open) { pointer-events: none; }
 .menu-overlay a {
   display: inline-block; font-size: clamp(36px, min(9vh, 12vw), 96px); font-weight: 800; letter-spacing: -2px; line-height: 1.1;
   color: var(--muted); transition: color .2s, transform .3s var(--ease);
