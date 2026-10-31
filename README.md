@@ -7,7 +7,7 @@ Virtusa, Celanese, First American, Amazon and ICICI Bank.
 ## Structure
 
 ```
-index.html          single page: hero, intro, highlights, work, experience, mentor, contact
+index.html          single page: hero, intro, highlights, work, experience, mentor
 css/styles.css      all styles (dark-first theme with a light mode, responsive)
 js/main.js          menu overlay, theme toggle, scroll reveal, carousels, sticky header
 assets/img/         case-study thumbnails, the hero photo, and the ICICI Bank and Chemille logos
