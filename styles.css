@@ -152,8 +152,10 @@ body.lock { overflow: hidden; }
   width: min(36vw, 520px); aspect-ratio: 1; margin-left: -6vw;
   border-radius: 28px; overflow: hidden; box-shadow: var(--shadow);
 }
-.hero-photo img { height: 100%; object-fit: cover; }
-/* Monogram card in place of a portrait */
+.hero-photo { border: 1px solid var(--border); background: #d6d9dd; }
+.hero-photo picture { display: block; width: 100%; height: 100%; }
+.hero-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%; }
+/* Monogram card (unused fallback; the hero now shows Ravi's photo) */
 .hero-mono {
   position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: center; align-items: center;
   border: 1px solid var(--border); background: var(--bg-elev);
