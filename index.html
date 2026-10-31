@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suvarna Myneni · AI-Native UX Designer</title>
+  <meta name="description" content="Suvarna Myneni, AI-Native UX Designer at eXp Realty. 8+ years designing products across eXp Realty, Amazon and ICICI Bank. Based in Hyderabad, India, open to remote.">
+  <meta property="og:title" content="Suvarna Myneni · AI-Native UX Designer">
+  <meta property="og:description" content="8+ years designing products across eXp Realty, Amazon and ICICI Bank. Based in Hyderabad, open to remote.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#030712">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preload" href="urbanist-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply saved theme before paint (dark is the default, as on the reference)
+    (function () {
+      try { if (localStorage.getItem('sm-theme') === 'light') document.documentElement.classList.add('light'); } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Sticky top bar: menu button + inline links on the left, theme toggle + contact on the right -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-left">
+      <button class="icon-btn menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="menu-overlay">
+        <svg class="i-menu" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M3 6h18M3 12h12M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+        <svg class="i-close" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+      </button>
+      <nav class="topnav" aria-label="Primary">
+        <a href="#start" class="is-active">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+      </nav>
+    </div>
+    <div class="topbar-right">
+      <button class="icon-btn" id="theme-btn" aria-label="Switch to light mode">
+        <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="currentColor"/></svg>
+        <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1.5v2.5M12 20v2.5M1.5 12H4M20 12h2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></g></svg>
+      </button>
+      <a class="btn" href="#contact">Contact me</a>
+    </div>
+  </header>
+
+  <!-- Full-screen menu overlay -->
+  <div class="menu-overlay" id="menu-overlay" hidden>
+    <nav aria-label="Menu">
+      <ul>
+        <li><a href="#start">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#mentor">Mentor</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="main">
+    <!-- 1. Hero -->
+    <section class="hero" id="start" aria-label="Introduction">
+      <div class="hero-inner">
+        <h1 class="hero-title reveal">Hey, I'm <span class="nowrap">Suvarna.</span></h1>
+        <figure class="hero-photo reveal" style="--d:.15s">
+          <img src="about-illustration-800.jpg" width="800" height="800" alt="Illustrated portrait of Suvarna at her desk with a laptop covered in design-tool stickers, a coffee mug and a note that says Progress not Perfection.">
+        </figure>
+      </div>
+      <a href="#about" class="scroll-arrow" aria-label="Scroll to about">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 4v16m0 0-6-6m6 6 6-6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+
+    <!-- 2. Intro statement -->
+    <section class="k-col" id="about">
+      <div class="wrap">
+        <h2 class="intro-text reveal">I'm an AI-Native UX Designer at eXp Realty, with 8+ years designing products across real estate, e-commerce at Amazon and banking at ICICI Bank. I work from research to AI-powered workflows, and I'm based in Hyderabad, India, open to remote.</h2>
+        <a class="story-link reveal" href="#experience">This is my path.</a>
+      </div>
+    </section>
+
+    <!-- 3. Highlights carousel -->
+    <section class="k-col tight" id="highlights" aria-labelledby="hl-title">
+      <div class="wrap">
+        <h6 id="hl-title" class="eyebrow">Highlights</h6>
+        <ul class="carousel hl-list" id="hl-carousel" tabindex="0" aria-label="Highlights, scroll horizontally">
+          <li class="hl-card glow"><span class="blob" aria-hidden="true"></span>
+            <h4>AI-Native UX Designer</h4>
+            <p>Designing AI automation and agentic workflows at <span class="text-accent">eXp Realty</span>, since Sep 2025.</p>
+          </li>
+          <li class="hl-card">
+            <h4>Senior UX Designer</h4>
+            <p>End-to-end UX at eXp Realty from Feb 2023 to Sep 2025.</p>
+          </li>
+          <li class="hl-card">
+            <h4>Amazon</h4>
+            <p>Designed customer experiences at Amazon from Aug 2020 to Feb 2023.</p>
+          </li>
+          <li class="hl-card">
+            <h4>ICICI Bank</h4>
+            <p>Worked on banking experiences at ICICI Bank from Oct 2018 to Aug 2020.</p>
+          </li>
+          <li class="hl-card">
+            <h4>AI Hands-on</h4>
+            <p>Building with ChatGPT, Claude, Grok, Google Stitch, Lovable and Cursor since 2025.</p>
+          </li>
+          <li class="hl-card">
+            <h4>Mentor</h4>
+            <p>Mentoring junior designers and interns, and onboarding new hires.</p>
+          </li>
+          <li class="hl-card">
+            <h4>Workshop Host</h4>
+            <p>Running design workshops for my team.</p>
+          </li>
+          <li class="hl-card">
+            <h4>Design Educated</h4>
+            <p>PG Diploma in Design, Manipal University, and an MCA from Osmania University.</p>
+          </li>
+        </ul>
+        <div class="carousel-controls">
+          <button class="carousel-btn" data-target="hl-carousel" data-dir="-1" aria-label="Previous highlights">&#8592;</button>
+          <button class="carousel-btn" data-target="hl-carousel" data-dir="1" aria-label="Next highlights">&#8594;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Big-word section: Product Designer -->
+    <section class="k-col" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <figure class="feature-img reveal">
+          <img src="hero-800.jpg" width="800" height="450" loading="lazy" alt="A painted wooden desk on a grassy island floating in a peach sky, with a laptop, coffee, notebooks and a plant.">
+        </figure>
+        <h1 class="big reveal" id="work-title">Product Designer.</h1>
+        <h2 class="sub reveal">I design from customer research and journey mapping through to design systems and AI workflows people can actually run.</h2>
+      </div>
+    </section>
+
+    <!-- 5. Work grid (staggered two columns) -->
+    <section class="k-col tight" id="projects" aria-labelledby="mywork-title">
+      <div class="wrap">
+        <h6 class="eyebrow" id="mywork-title">My Work</h6>
+        <ul class="work-grid">
+          <li class="work-card reveal">
+            <a href="https://suvarnamyneni-project.github.io/work/deal-desk/" class="work-link">
+              <div class="img-zoom"><img src="deal-desk.jpg" width="880" height="503" loading="lazy" alt="A pastel transaction pipeline in a browser window, with documents, a stamp, a key and a house."></div>
+              <h2>One AI-native desk for a deal, from submitted to paid.</h2>
+              <h5>Deal Desk · eXp Realty</h5>
+              <p>A team project at eXp Realty: one AI-native transaction desk for agents and the staff who settle the deal.</p>
+            </a>
+            <ul class="pills" aria-label="Tags"><li>AI Automation</li><li>Agentic AI</li><li>Web App</li></ul>
+          </li>
+          <li class="work-card reveal">
+            <a href="https://suvarnamyneni-project.github.io/my-exp-mira-case-study/" class="work-link">
+              <div class="img-zoom"><img src="myexp-mira.jpg" width="880" height="503" loading="lazy" alt="A monitor opening onto a portal, with a glowing chat bubble."></div>
+              <h2>One front door for new agents, with an AI assistant that knows when to hand off.</h2>
+              <h5>My eXp + Mira · eXp Realty</h5>
+              <p>My eXp, a single hub for new eXp Realty agents, and Mira, an AI assistant that answers from the agent's own data and hands off to a person when needed. Designed in Figma, prototyped in Lovable.</p>
+            </a>
+            <ul class="pills" aria-label="Tags"><li>AI Assistant</li><li>Figma</li><li>Lovable</li></ul>
+          </li>
+          <li class="work-card reveal">
+            <a href="https://suvarnamyneni-project.github.io/amazon-fresh-case-study/" class="work-link">
+              <div class="img-zoom"><img src="amazon-fresh.jpg" width="880" height="880" loading="lazy" alt="A basket of vegetables, a recipe book and a phone on a small island."></div>
+              <h2>Turning a dish you want to cook into a ready-to-buy grocery cart.</h2>
+              <h5>Shop by Recipe · Amazon Fresh</h5>
+              <p>Research and design for a recipe-guided mobile shopping flow, from survey and competitor review to a filled Fresh cart.</p>
+            </a>
+            <ul class="pills" aria-label="Tags"><li>Mobile App</li><li>User Research</li><li>E-commerce</li></ul>
+          </li>
+          <li class="work-card reveal">
+            <a href="https://suvarnamyneni-project.github.io/imobile-case-study/" class="work-link">
+              <div class="img-zoom"><img src="imobile.jpg" width="880" height="503" loading="lazy" alt="A phone, a piggy bank and coins on a small island."></div>
+              <h2>Revamping a personal banking app for people whose financial lives don't look alike.</h2>
+              <h5>iMobile · ICICI Bank</h5>
+              <p>Research, interviews and core UX design for the ICICI Bank iMobile iOS revamp.</p>
+            </a>
+            <ul class="pills" aria-label="Tags"><li>iOS</li><li>Fintech</li><li>Research</li></ul>
+          </li>
+          <li class="work-card reveal">
+            <a href="https://suvarnamyneni-project.github.io/cubic-translink-merchant-case-study/" class="work-link">
+              <div class="img-zoom"><img src="translink.webp" width="1167" height="500" loading="lazy" alt="Four Translink Merchant Android screens: splash, log in, PIN entry and the Admin home."></div>
+              <h2>A point-of-sale app for the shops that sell go cards.</h2>
+              <h5>Translink Merchant · Cubic Transportation Systems</h5>
+              <p>An Android app for retailers around Brisbane and South East Queensland: read a card, take payment, load value or a pass, print the receipt and close the shift.</p>
+            </a>
+            <ul class="pills" aria-label="Tags"><li>Android</li><li>Role-based UX</li><li>Prototyping</li></ul>
+          </li>
+          <li class="work-card reveal">
+            <a href="https://suvarnamyneni-project.github.io/work/agent-transactions/" class="work-link">
+              <div class="img-zoom"><img src="agent-transactions.jpg" width="880" height="880" loading="lazy" alt="A clay island with a laptop, a small white house, a folder and a contract with a pen."></div>
+              <h2>One workspace for the transaction back office.</h2>
+              <h5>Deal Desk back office · eXp Realty</h5>
+              <p>A nine-month proposal for a transaction back office: one workspace, explicit roles, and a clickable spec.</p>
+            </a>
+            <ul class="pills" aria-label="Tags"><li>Web App</li><li>Roles &amp; Permissions</li><li>Spec</li></ul>
+          </li>
+          <li class="work-card reveal">
+            <a href="https://suvarnamyneni-project.github.io/perfect-properties-case-study/" class="work-link">
+              <div class="img-zoom"><img src="perfect-properties.jpg" width="880" height="503" loading="lazy" alt="Three houses, a map pin and a tablet."></div>
+              <h2>A calmer way to find a home.</h2>
+              <h5>Perfect Properties</h5>
+              <p>A real estate app for searching, comparing, touring and financing a home, with its own UI kit.</p>
+            </a>
+            <ul class="pills" aria-label="Tags"><li>Mobile App</li><li>UI Kit</li><li>Real Estate</li></ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. Statement banner + more work -->
+    <section class="k-col tight" aria-labelledby="more-title">
+      <div class="wrap narrow">
+        <h2 class="statement reveal">Across banking, e-commerce and real estate, I've turned research into journeys, design systems and AI workflows that teams can ship.</h2>
+        <h6 class="eyebrow mt" id="more-title">More from the archive</h6>
+        <ul class="archive">
+          <li><a href="https://myneni.wixsite.com/exprealty"><img src="myexp-app.jpg" width="880" height="880" loading="lazy" alt=""><span><strong>My eXp Application Design</strong><em>The My eXp web app experience for eXp Realty agents.</em></span><i aria-hidden="true">&#8599;</i></a></li>
+          <li><a href="https://myneni.wixsite.com/wallet"><img src="wall-ett.jpg" width="880" height="880" loading="lazy" alt=""><span><strong>Wall-ett</strong><em>A financial records app for balances, expenses and a bill scanner.</em></span><i aria-hidden="true">&#8599;</i></a></li>
+          <li><a href="https://motiveux.wixsite.com/datacentra"><img src="data-central.jpg" width="880" height="880" loading="lazy" alt=""><span><strong>Data Central Navigation Design</strong><em>Navigation shaped with the people who use it.</em></span><i aria-hidden="true">&#8599;</i></a></li>
+          <li><a href="https://motiveux.wixsite.com/timelogtool"><img src="timelog.jpg" width="880" height="880" loading="lazy" alt=""><span><strong>Timelog Tool MVP</strong><em>One place for a team's productive and non-productive hours.</em></span><i aria-hidden="true">&#8599;</i></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7. Experienced -->
+    <section class="k-col" id="experience" aria-labelledby="exp-title">
+      <div class="wrap">
+        <h1 class="big reveal" id="exp-title">Experienced.</h1>
+        <h2 class="sub reveal">8+ years across real estate tech, e-commerce and banking, and still learning every week.</h2>
+
+        <h6 class="eyebrow mt">Full time roles</h6>
+        <ul class="carousel role-list" id="role-carousel" tabindex="0" aria-label="Roles, scroll horizontally">
+          <li class="role-card glow"><span class="blob" aria-hidden="true"></span>
+            <span class="badge">Current</span>
+            <span class="co">eXp Realty</span>
+            <h4>AI-Native UX Designer</h4>
+            <p class="date">Sep 2025 – Present</p>
+          </li>
+          <li class="role-card">
+            <span class="co">eXp Realty</span>
+            <h4>Senior UX Designer</h4>
+            <p class="date">Feb 2023 – Sep 2025</p>
+          </li>
+          <li class="role-card">
+            <span class="co">Amazon</span>
+            <h4>UX Designer</h4>
+            <p class="date">Aug 2020 – Feb 2023</p>
+          </li>
+          <li class="role-card">
+            <span class="co">ICICI Bank</span>
+            <h4>UX Designer</h4>
+            <p class="date">Oct 2018 – Aug 2020</p>
+          </li>
+        </ul>
+        <div class="carousel-controls">
+          <button class="carousel-btn" data-target="role-carousel" data-dir="-1" aria-label="Previous roles">&#8592;</button>
+          <button class="carousel-btn" data-target="role-carousel" data-dir="1" aria-label="Next roles">&#8594;</button>
+        </div>
+
+        <h6 class="eyebrow mt">Education</h6>
+        <ul class="role-list static">
+          <li class="role-card">
+            <span class="co">Manipal University</span>
+            <h4>Postgraduate Diploma in Design</h4>
+            <p class="date">2018</p>
+          </li>
+          <li class="role-card">
+            <span class="co">Osmania University</span>
+            <h4>Master of Computer Applications (MCA)</h4>
+            <p class="date">2017</p>
+          </li>
+        </ul>
+
+        <h6 class="eyebrow mt">Proficiencies</h6>
+        <ul class="pills big-pills">
+          <li>UX Design</li><li>Product Design</li><li>User Research</li><li>Journey Mapping</li><li>Design Systems</li><li>Prototyping</li><li>AI Automation</li><li>Agentic UX</li><li>Product Analytics</li>
+        </ul>
+
+        <h6 class="eyebrow mt">Methods of the craft</h6>
+        <ul class="pills big-pills tools">
+          <li>Figma</li><li>Heap</li><li>Mixpanel</li><li>ChatGPT</li><li>Claude</li><li>Grok</li><li>Google Stitch</li><li>Lovable</li><li>Cursor</li>
+        </ul>
+        <a class="btn mt-btn" href="#contact">&#9993;&ensp;Contact</a>
+      </div>
+    </section>
+
+    <!-- 8. Mentor -->
+    <section class="k-col" id="mentor" aria-labelledby="mentor-title">
+      <div class="wrap">
+        <h1 class="big reveal" id="mentor-title">Mentor.</h1>
+        <h2 class="sub reveal">Good design teams grow together. I make time to help the designers around me learn the craft and find their footing.</h2>
+        <ul class="mentor-grid">
+          <li class="mentor-card reveal">
+            <span class="num" aria-hidden="true">01</span>
+            <h3>Mentoring</h3>
+            <h4>Junior designers &amp; interns</h4>
+            <p>I mentor junior designers and interns through their work, from research and flows to critique and handoff.</p>
+          </li>
+          <li class="mentor-card reveal" style="--d:.1s">
+            <span class="num" aria-hidden="true">02</span>
+            <h3>Workshops</h3>
+            <h4>Design workshops for my team</h4>
+            <p>I run design workshops for my team to share methods and work through problems together.</p>
+          </li>
+          <li class="mentor-card reveal" style="--d:.2s">
+            <span class="num" aria-hidden="true">03</span>
+            <h3>Onboarding</h3>
+            <h4>Bringing new hires up to speed</h4>
+            <p>I onboard new hires so they can find their way around the product, the team and how we work.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 9. Contact -->
+    <section class="k-col" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="contact-card glow reveal"><span class="blob" aria-hidden="true"></span>
+          <h1 class="big" id="contact-title">Let's talk.</h1>
+          <h2 class="sub">I'm in Hyderabad, India, and open to remote roles. Write to me any time.</h2>
+          <div class="btn-group">
+            <a class="btn btn-solid" href="mailto:suvarnamyneni@gmail.com">suvarnamyneni@gmail.com</a>
+            <a class="btn" href="https://www.linkedin.com/in/suvarnamyneni/" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span> &#8599;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Suvarna Myneni · AI-Native UX Designer · Hyderabad, India</p>
+      <p><a href="mailto:suvarnamyneni@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/suvarnamyneni/" target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <a href="#start" class="back-to-top" id="back-to-top" aria-label="Back to top">&#8593;</a>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
