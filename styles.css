@@ -143,6 +143,8 @@ body.lock { overflow: hidden; }
 .status-dot { width: 8px; height: 8px; border-radius: 50%; background: #16a34a; flex: none; }
 .hero-title { margin-top: 24px; font-size: clamp(36px, 5.2vw, 68px); font-weight: 800; line-height: 1.06; letter-spacing: -.03em; max-width: 16ch; }
 .hero-lede { margin-top: 24px; max-width: 60ch; font-size: clamp(17px, 1.5vw, 20px); color: var(--muted); }
+.hero-role { margin-top: 16px; max-width: 60ch; font-size: clamp(17px, 1.6vw, 21px); font-weight: 700; line-height: 1.4; color: var(--text); }
+.hero-lede + .hero-lede { margin-top: 14px; }
 .hero-ctas { margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px; }
 .hero-photo { margin: 0; }
 .hero-photo img { width: 100%; max-width: 420px; margin-left: auto; aspect-ratio: 1; object-fit: cover; border-radius: var(--radius); }
