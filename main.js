@@ -57,7 +57,7 @@
 
   // Active nav link
   var links = document.querySelectorAll('.topnav a');
-  var ids = ['top', 'about', 'work', 'experience', 'skills'];
+  var ids = ['top', 'work', 'experience', 'skills'];
   if ('IntersectionObserver' in window) {
     var navIO = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {

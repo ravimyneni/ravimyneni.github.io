@@ -173,7 +173,6 @@ body.lock { overflow: hidden; }
 }
 
 /* ---------- About ---------- */
-.about-text { font-size: clamp(19px, 1.8vw, 24px); line-height: 1.55; font-weight: 500; max-width: 62ch; }
 .chips { margin-top: 28px; display: flex; flex-wrap: wrap; gap: 10px; }
 .chips li { font-size: 15px; font-weight: 600; padding: 8px 14px; border: 1px solid var(--line); border-radius: 100px; background: var(--surface); }
 
