@@ -26,13 +26,13 @@ No build step and no external requests: every path is relative.
 ## Case studies
 
 Each case study is its own GitHub Pages repository, served at `https://ravimyneni.github.io/<repo>/`.
-Portfolio order on the homepage:
+Selected work on the homepage:
 
-1. `cubic-translink-merchant-case-study`: Translink Merchant, Cubic Transportation Systems
-2. `askchemille-case-study`: Chemille B2B website redesign, Celanese
-3. `amazon-fresh-case-study`: Amazon Food, Shop by Recipe (repo name kept so links don't break)
-4. `ignitere-help-center-case-study`: First American IgniteRE, Help Center & Chat Support
-5. `imobile-case-study`: ICICI Bank iMobile
+1. `cubic-translink-merchant-case-study`: Translink Merchant, Cubic / Virtusa
+2. `amazon-fresh-case-study`: Amazon Food, Shop by Recipe (repo name kept so links don't break)
+3. `imobile-case-study`: ICICI Bank iMobile
+
+Chemille (`askchemille-case-study`) and IgniteRE (`ignitere-help-center-case-study`) stay in Highlights and Experience.
 
 ## Run locally
 
